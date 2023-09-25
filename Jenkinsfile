@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                bat 'set'
                 sh 'mvn --version'
             }
         }
