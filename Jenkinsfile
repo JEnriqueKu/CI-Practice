@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                git(url: 'https://github.com/JEnriqueKu/CI-Practice', branch: 'main')
                 sh 'mvn --version'
             }
         }
