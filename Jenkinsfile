@@ -6,6 +6,7 @@ pipeline {
             steps {
                 bat 'cd $WORKSPACE/my-project && npm install'
                 bat 'set'
+                bat 'echo hello'
             }
         }
     }
