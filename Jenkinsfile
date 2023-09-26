@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cd $WORKSPACE/my-project && npm install'
+                bat 'cd $WORKSPACE/my-project && npm install'
                 bat 'set'
             }
         }
