@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cmd.exe mvn --version'
+                sh 'cd $WORKSPACE/my-project && npm install'
             }
         }
     }
